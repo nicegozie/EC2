@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-pipeline {
+pipelines {
     agent any
 
     options {
@@ -11,9 +11,7 @@ pipeline {
     }
 
     tools {
-        jdk 'openjdk-11'
-        maven 'maven 3.6.3'
-        dockerTool 'docker-latest'
+        maven 'maven 3.6.3' 
     }
 
     environment {
