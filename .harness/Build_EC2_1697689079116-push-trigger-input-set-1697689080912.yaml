@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_EC2_1697689079116-push-trigger-input-set
+  identifier: Build_EC2_1697689079116pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_EC2_1697689079116
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
